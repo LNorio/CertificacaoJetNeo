@@ -1,0 +1,89 @@
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+<style>
+
+    .collum{
+        width: 40%;
+    }
+
+    .container-form{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 3%;
+    }
+
+    .field label{
+        padding: 2px 0px 0px 15px;
+        margin: 0px
+    }
+
+    .ui.content{
+        width: 30%;
+        align-self: center;
+    }
+
+    .espaco{
+        padding-left: 20px;
+    }
+
+    #editar{
+        visibility: hidden;
+        margin-bottom: 20px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+    }
+</style>
+
+<div class= "ui grid container-form">
+    <div class="row ui grid">
+            <h3> Editar Session </h3>
+        <div class="ui submit button" id="resgatar">
+            Resgatar
+        </div>
+    </div>
+    <div class="ui form row" id="editSessionForm">
+        <div class="collum">
+            <div class="field required">
+                <label>Nome</label>
+                <div class="ui left input">
+                    <input id="nome_guardado" type="text" name="nome" placeholder="Nome" disabled/>
+                </div>
+            </div>
+            <div class="field required">
+                <label>E-mail</label>
+                <div class="ui left input">
+                    <input id="email_guardado" type="text" name="email" placeholder="E-mail" disabled/>
+                </div>
+            </div>
+            <div class="field required">
+                <label>Telefone</label>
+                <div class="ui left input">
+                    <input id="tel_guardado" type="number" name="fone" placeholder="Telefone com DDD somente numeros" disabled/>
+                </div>
+            </div>
+            <div class="field required">
+                <label>Assunto</label>
+                <div class="ui left input">
+                    <input id="assunto_guardado" type="text" name="assunto" placeholder="Assunto" disabled/>
+                </div>
+            </div>
+            <div class="field required">
+                <label>Mensagem</label>
+                <div class="ui left input">
+                    <textarea id="msg_guardado" disabled></textarea>
+                </div>
+            </div>
+            <div class="ui submit button " id='editar'>
+                Alterar
+            </div>
+            <div class="ui error message"></div>    
+        </div>
+    </div>
+</div>

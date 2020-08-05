@@ -1,0 +1,115 @@
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+<style>
+    .ui.form{
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    .container-form{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 3%;
+    }
+
+    .field label{
+        padding: 2px 0px 0px 15px;
+        margin: 0px
+    }
+
+    .ui.content{
+        width: 30%;
+        align-self: center;
+    }
+
+    .espaco{
+        padding-left: 20px;
+    }
+
+    .ui.grid.fim {
+        justify-content: flex-end;
+        margin: 0 30px 30px 0;
+        visibility: hidden;
+    }
+
+    input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+    }
+</style>
+
+<div class= "container-form">
+    <div class="ui form" id="addSessionForm">
+        <div>
+            <div class="field required">
+                <label>Nome</label>
+                <div class="ui left input">
+                    <input id="nome_cadastro" class="validaSession" type="text" name="nome" placeholder="Nome">
+                </div>
+            </div>
+            <div class="field required">
+                <label>E-mail</label>
+                <div class="ui left input">
+                    <input id="email_cadastro" class="validaSession" type="text" name="email" placeholder="E-mail">
+                </div>
+            </div>
+            <div class="field required">
+                <label>Telefone</label>
+                <div class="ui left input">
+                    <input  id="tel_cadastro" class="validaSession" type="number" name="fone" placeholder="Telefone com DDD somente numeros">
+                </div>
+            </div>
+            <div class="field required">
+                <label>Assunto</label>
+                <div class="ui left input">
+                    <input id="assunto_cadastro" class="validaSession" type="text" name="assunto" placeholder="Assunto">
+                </div>
+            </div>
+            <div class="field required">
+                <label>Mensagem</label>
+                <div class="ui left input">
+                    <textarea id="msg_cadastro" class="validaSession"></textarea>
+                </div>
+            </div>
+            <div class="ui submit button" id='salvar'>
+                Enviar
+            </div>
+            <div class="ui error message"></div>    
+        </div>
+    </div>
+
+    <div class="ui content">
+        <div class="ui grid">
+            <h3>Nome:</h3>
+            <p class="espaco" id="nome_digitado"></p>
+        </div>
+        <div class="ui grid">
+            <h3>Email:</h3>
+            <p class="espaco" id="email_digitado"></p>
+        </div>
+        <div class="ui grid">
+            <h3>Telefone:</h3>
+            <p class="espaco" id="tel_digitado"></p>
+        </div>
+        <div class="ui grid">
+            <h3>Assunto:</h3>
+            <p class="espaco" id="assunto_digitado"></p>
+        </div>
+        <div class="ui grid">
+            <h3>Mensagem:</h3>
+            <p class="espaco" id="msg_digitado"></p>
+        </div>
+    </div>
+</div>
+<div class="ui grid fim" id="proximo">
+    <div class="ui button">
+        <a href="/hotsite/frontend2">
+            Proximo
+        </a>
+    </div>
+</div>
+
