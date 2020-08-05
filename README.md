@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # NEO - Omnichannel commerce platform
 ![alt-text](https://img.shields.io/badge/version-2.71.36RC-orange.svg "Release Version")
 
@@ -61,5 +61,3 @@ Seu código dentro da pasta resources irá ser compilado para produção com min
 
 Nossos modelos e objetos são todos baseados nos retornos da API dos Micro-Serviços. Para obter uma lista atualizada acesse nossa documentação online de ajuda. (https://neohelp.readme.io/v1/reference)
 =======
-# CertificacaoJetNeo
->>>>>>> 7ae2ffc499e46ab14f3ff1d415a3e53754c9361a
