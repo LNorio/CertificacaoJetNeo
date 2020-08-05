@@ -60,4 +60,4 @@ Seu código dentro da pasta resources irá ser compilado para produção com min
 ## Modelos e Objetos
 
 Nossos modelos e objetos são todos baseados nos retornos da API dos Micro-Serviços. Para obter uma lista atualizada acesse nossa documentação online de ajuda. (https://neohelp.readme.io/v1/reference)
-=======
+
